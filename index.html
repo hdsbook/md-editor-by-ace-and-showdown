@@ -20,3 +20,9 @@
 <script src="node_modules/showdown/dist/showdown.min.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/ace-builds/src-min/ace.js"></script>
+<script src="assets/js/markdown_io.js"></script>
+<script>
+    $(function() {
+        var io = new MarkdownIO("markdownArea", "outputArea");
+    });
+</script>
