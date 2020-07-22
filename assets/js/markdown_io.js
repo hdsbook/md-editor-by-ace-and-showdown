@@ -23,3 +23,14 @@ MarkdownIO.prototype._markdownToHtml = function(text) {
     var converter = new showdown.Converter();
     return converter.makeHtml(text);
 }
+
+MarkdownIO.prototype.loadFileContent = function(file) {
+    var _this = this;
+    $.get(file, function (data) {
+        _this.editor.setValue(data);
+
+        // set cursor to the end of input area
+        _this.editor.focus();
+        _this.editor.navigateFileEnd();
+    }, 'text');
+}
