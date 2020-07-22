@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="node_modules/github-markdown-css/github-markdown.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<style>
+    body {
+        height: 100vh;
+    }
+</style>
+
+<div class="d-flex justify-content-around align-items-center h-100 p-5">
+    <div class="flex-fill h-100 m-3 mb-5">
+        <h3>Input markdown</h3>
+        <div id="markdownArea" class="border rounded w-100 h-100"></div>
+    </div>
+    <div class="flex-fill h-100 m-3 mb-5">
+        <h3>Output Html</h3>
+        <div id="outputArea" class="markdown-body border rounded w-100 h-100 p-3 overflow-auto"></div>
+    </div>
+</div>
+
+<script src="node_modules/showdown/dist/showdown.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/ace-builds/src-min/ace.js"></script>
