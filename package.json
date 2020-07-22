@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "github-markdown-css": "^4.0.0",
     "jquery": "^3.5.1",
     "showdown": "^1.9.1"
   }
